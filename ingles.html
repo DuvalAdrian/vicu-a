@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exclusive Collection - Vicuña</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.6/css/flag-icons.min.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">
+      <a href="#">
+        <img src="img/logo.png" alt="Vicuña Fiber Logo">
+      </a>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Collection</a>
+      <a href="#">Our Story</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#" class="btn">Contact Us</a>
+
+      <!-- 🌍 Language Selector -->
+      <div class="lang-dropdown">
+        <button class="lang-btn">
+          <span class="fi fi-gb"></span> EN
+        </button>
+        <ul class="lang-menu">
+          <li><a href="index.html"><span class="fi fi-pe"></span> Español</a></li>
+          <li><a href="ingles.html"><span class="fi fi-gb"></span> English</a></li>
+          <li><a href="frances.html"><span class="fi fi-fr"></span> Français</a></li>
+          <li><a href="aleman.html"><span class="fi fi-de"></span> Deutsch</a></li>
+          <li><a href="italiano.html"><span class="fi fi-it"></span> Italiano</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="video/hero.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <div class="hero-text">
+    <h1>Welcome to ACOMACASA</h1>
+    <p>
+      From the heart of the Andes in Arequipa, we share with the world
+      the essence of vicuña fiber, the finest and most treasured on the planet.
+    </p>
+    <p class="slogan">“Dress in origin, wear history. Vicuña fiber from the heart of the Andes.”</p>
+  </div>
+</section>
+
+<!-- EXCLUSIVE COLLECTION -->
+<section class="exclusive">
+  <div class="container">
+    <span class="tag">EXCLUSIVE COLLECTION</span>
+    <h2 class="title">
+      Redefined Elegance: The Essence of <br />
+      <span>Luxury</span>
+    </h2>
+    <p class="description">
+      Discover our collection of garments and hats made from vicuña fiber,
+      where unmatched craftsmanship meets exclusivity to create timeless pieces
+      that embody a sophisticated lifestyle.
+    </p>
+    <div class="avatars">
+      <img src="img/avatar1.jpg" alt="Client 1" />
+      <img src="img/avatar2.jpg" alt="Client 2" />
+      <img src="img/avatar3.jpg" alt="Client 3" />
+      <img src="img/avatar4.jpg" alt="Client 4" />
+      <img src="img/avatar5.jpg" alt="Client 5" />
+    </div>
+    <div class="buttons">
+      <a href="#" class="btn primary">Discover</a>
+      <a href="#" class="btn secondary"><span class="icon">➝</span> View Collection</a>
+    </div>
+  </div>
+</section>
+
+<!-- NEW ARRIVALS -->
+<section class="nuevas-llegadas">
+  <div class="container">
+    <h2>New Autumn Arrivals</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="img/producto1.jpg" alt="Vicuña fiber coat">
+        <h3>Vicuña fiber coat</h3>
+        <p class="precio">$45.00</p>
+        <button class="btn-outline">Buy now</button>
+      </div>
+      <div class="card">
+        <img src="img/producto2.jpg" alt="Vicuña fiber scarf">
+        <h3>Vicuña fiber scarf</h3>
+        <p class="precio">$60.00</p>
+        <button class="btn-outline">Buy now</button>
+      </div>
+      <div class="card">
+        <img src="img/producto3.jpg" alt="Vicuña fiber poncho">
+        <h3>Vicuña fiber poncho</h3>
+        <p class="precio">$35.00</p>
+        <button class="btn-outline">Buy now</button>
+      </div>
+      <div class="card">
+        <img src="img/producto4.jpg" alt="Vicuña fiber gloves">
+        <h3>Vicuña fiber gloves</h3>
+        <p class="precio">$55.00</p>
+        <button class="btn-outline">Buy now</button>
+      </div>
+      <div class="card">
+        <img src="img/producto5.jpg" alt="Vicuña fiber hat">
+        <h3>Vicuña fiber hat</h3>
+        <p class="precio">$70.00</p>
+        <button class="btn-outline">Buy now</button>
+      </div>
+      <div class="card">
+        <img src="img/producto6.jpg" alt="Vicuña fiber plush">
+        <h3>Vicuña fiber plush</h3>
+        <p class="precio">$40.00</p>
+        <button class="btn-outline">Buy now</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POPUP MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3 id="modal-title">Product title</h3>
+    <p id="modal-desc">Here will appear the detailed description of the selected product.</p>
+    <button class="btn-outline">Add to cart</button>
+  </div>
+</div>
+
+<!-- PRODUCT MODAL -->
+<div class="modal" id="product-modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-body">
+      <img id="modal-img" src="" alt="Product">
+      <div class="modal-text">
+        <h3 id="modal-title"></h3>
+        <p id="modal-description"></p>
+        <button class="buy-btn">Buy now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DISCOVER ELEGANCE -->
+<section class="de-section" id="descubre-la-elegancia">
+  <div class="de-container">
+    <div class="de-topbar">
+      <div class="de-chip">
+        <span>EXCLUSIVE</span>
+        <span class="de-dot"></span>
+        <span>BRAND STORY</span>
+        <span class="de-chev">›</span>
+      </div>
+      <button class="de-cta" type="button" aria-label="View collection">View collection</button>
+    </div>
+
+    <h2 class="de-title">Discover Elegance</h2>
+    <p class="de-subtitle">Behind every garment</p>
+
+    <!-- Item 1 -->
+    <article class="de-item reveal">
+      <div class="de-col de-copy">
+        <p class="de-date">FEBRUARY 19, 2025</p>
+        <h3 class="de-item-title">The Art of Vicuña Fiber</h3>
+        <p class="de-desc">
+          We explore the tradition and craftsmanship behind each piece, highlighting the rarity
+          and luxury of vicuña fiber.
+        </p>
+        <a href="#" class="de-link">DISCOVER</a>
+      </div>
+      <div class="de-col de-media">
+        <img src="img/elegancia-1.jpg" alt="Golden-toned vicuña fiber texture">
+      </div>
+    </article>
+
+    <hr class="de-divider">
+
+    <!-- Item 2 -->
+    <article class="de-item de-item--reverse reveal">
+      <div class="de-col de-media">
+        <img src="img/elegancia-2.jpg" alt="Fashion editorial with vicuña garment">
+      </div>
+      <div class="de-col de-copy">
+        <p class="de-date">MARCH 10, 2025</p>
+        <h3 class="de-item-title">Our Philosophy: Exclusivity and Sustainability</h3>
+        <p class="de-desc">
+          Excellence meets respect for origin. A glimpse into the values that inspire
+          each creation and the people behind them.
+        </p>
+        <a href="#" class="de-link">DISCOVER</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- EXQUISITE CRAFTSMANSHIP -->
+<section class="artesania-vicuna">
+  <div class="container">
+    <h2 class="section-title">The Exquisite Craftsmanship of Vicuña Fiber</h2>
+
+    <div class="fila alterna">
+      <div class="col imagen">
+        <img src="img/vicuna1.jpg" alt="Handmade process with vicuña fiber">
+      </div>
+      <div class="col texto">
+        <h3>The Origin of the Fiber</h3>
+        <p>
+          Vicuña fiber is considered one of the finest and most exclusive in the world.
+          Each strand is carefully selected to give life to luxury pieces
+          that transcend generations.
+        </p>
+      </div>
+    </div>
+
+    <div class="fila alterna">
+      <div class="col texto">
+        <h3>An Art That Transcends</h3>
+        <p>
+          Each garment is the result of an artisanal legacy that combines ancestral tradition
+          with contemporary design, achieving a perfect balance
+          between elegance and sophistication.
+        </p>
+      </div>
+      <div class="col imagen">
+        <img src="img/vicuna2.jpg" alt="Luxury garment made with vicuña fiber">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="pie-de-pagina">
+  <div class="container">
+    <h2 class="marca">Vicuña Fiber</h2>
+    <p class="origen">Proudly made in Peru · Handcrafted in Áncash</p>
+    <p class="descripcion">Handmade vicuña fiber · Exclusivity and sophistication</p>
+    <div class="contacto">
+      <p>Phone: <a href="tel:+51963930498">+51 963 930 498</a></p>
+    </div>
+    <nav class="enlaces">
+      <a href="#">Collections</a>
+      <a href="#">About us</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms and Conditions</a>
+    </nav>
+    <p class="copy">© 2025 Vicuña Fiber · All rights reserved</p>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const langBtn = document.querySelector(".lang-btn");
+    const langMenu = document.querySelector(".lang-menu");
+
+    langBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      langMenu.classList.toggle("show");
+    });
+
+    document.addEventListener("click", () => {
+      langMenu.classList.remove("show");
+    });
+  });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colección Exclusiva - Vicuña</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.6/css/flag-icons.min.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">
+      <a href="#">
+        <img src="img/logo.png" alt="Logo Fibra de Vicuña">
+      </a>
+    </div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Colección</a>
+      <a href="#">Nuestra Historia</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#" class="btn">Contáctanos</a>
+
+      <!-- 🌍 Selector de idioma -->
+      <div class="lang-dropdown">
+        <button class="lang-btn">
+          <span class="fi fi-es"></span> ES
+        </button>
+        <ul class="lang-menu">
+          <li><a href="espanol.html"><span class="fi fi-pe"></span> Español</a></li>
+          <li><a href="ingles.html"><span class="fi fi-gb"></span> English</a></li>
+          <li><a href="frances.html"><span class="fi fi-fr"></span> Français</a></li>
+          <li><a href="aleman.html"><span class="fi fi-de"></span> Deutsch</a></li>
+          <li><a href="italiano.html"><span class="fi fi-it"></span> Italiano</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="video/hero.mp4" type="video/mp4">
+    Tu navegador no soporta video en HTML5.
+  </video>
+  <div class="hero-text">
+    <h1>Bienvenidos a ACOMACASA</h1>
+    <p>
+      Desde el corazón de los Andes en Arequipa compartimos con el mundo 
+      la esencia de la fibra de vicuña, la más fina y apreciada del planeta.
+    </p>
+    <p class="slogan">“Vístete de origen, viste historia. Fibra de vicuña desde el corazón de los Andes.”</p>
+  </div>
+</section>
+
+<!-- COLECCIÓN EXCLUSIVA -->
+<section class="exclusive">
+  <div class="container">
+    <span class="tag">COLECCIÓN EXCLUSIVA</span>
+    <h2 class="title">
+      Elegancia Redefinida: La Esencia del <br />
+      <span>Lujo</span>
+    </h2>
+    <p class="description">
+      Descubre nuestra colección de prendas y sombreros elaborados con fibra de vicuña, 
+      donde la artesanía incomparable se une con la exclusividad para crear piezas 
+      que trascienden el tiempo y definen un estilo de vida sofisticado.
+    </p>
+    <div class="avatars">
+      <img src="img/avatar1.jpg" alt="Cliente 1" />
+      <img src="img/avatar2.jpg" alt="Cliente 2" />
+      <img src="img/avatar3.jpg" alt="Cliente 3" />
+      <img src="img/avatar4.jpg" alt="Cliente 4" />
+      <img src="img/avatar5.jpg" alt="Cliente 5" />
+    </div>
+    <div class="buttons">
+      <a href="#" class="btn primary">Descubrir</a>
+      <a href="#" class="btn secondary"><span class="icon">➝</span> Ver Colección</a>
+    </div>
+  </div>
+</section>
+
+<!-- NUEVAS LLEGADAS -->
+<section class="nuevas-llegadas">
+  <div class="container">
+    <h2>Nuevas Llegadas de Otoño</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="img/producto1.jpg" alt="Abrigo de fibra de vicuña">
+        <h3>Abrigo de fibra de vicuña</h3>
+        <p class="precio">$45.00</p>
+        <button class="btn-outline">Comprar ahora</button>
+      </div>
+      <div class="card">
+        <img src="img/producto2.jpg" alt="Bufanda de fibra de vicuña">
+        <h3>Bufanda de fibra de vicuña</h3>
+        <p class="precio">$60.00</p>
+        <button class="btn-outline">Comprar ahora</button>
+      </div>
+      <div class="card">
+        <img src="img/producto3.jpg" alt="Poncho de fibra de vicuña">
+        <h3>Poncho de fibra de vicuña</h3>
+        <p class="precio">$35.00</p>
+        <button class="btn-outline">Comprar ahora</button>
+      </div>
+      <div class="card">
+        <img src="img/producto4.jpg" alt="Guantes de fibra de vicuña">
+        <h3>Guantes de fibra de vicuña</h3>
+        <p class="precio">$55.00</p>
+        <button class="btn-outline">Comprar ahora</button>
+      </div>
+      <div class="card">
+        <img src="img/producto5.jpg" alt="Sombrero de fibra de vicuña">
+        <h3>Sombrero de fibra de vicuña</h3>
+        <p class="precio">$70.00</p>
+        <button class="btn-outline">Comprar ahora</button>
+      </div>
+      <div class="card">
+        <img src="img/producto6.jpg" alt="Peluche de fibra de vicuña">
+        <h3>Peluche de fibra de vicuña</h3>
+        <p class="precio">$40.00</p>
+        <button class="btn-outline">Comprar ahora</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3 id="modal-title">Título del producto</h3>
+    <p id="modal-desc">Aquí irá la descripción detallada del producto seleccionado.</p>
+    <button class="btn-outline">Añadir al carrito</button>
+  </div>
+</div>
+
+<div class="modal" id="product-modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-body">
+      <img id="modal-img" src="" alt="Producto">
+      <div class="modal-text">
+        <h3 id="modal-title"></h3>
+        <p id="modal-description"></p>
+        <button class="buy-btn">Comprar ahora</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DESCUBRE LA ELEGANCIA -->
+<section class="de-section" id="descubre-la-elegancia">
+  <div class="de-container">
+    <div class="de-topbar">
+      <div class="de-chip">
+        <span>EXCLUSIVO</span>
+        <span class="de-dot"></span>
+        <span>HISTORIA DE LA MARCA</span>
+        <span class="de-chev">›</span>
+      </div>
+      <button class="de-cta" type="button" aria-label="Ver colección">Ver colección</button>
+    </div>
+
+    <h2 class="de-title">Descubre la Elegancia</h2>
+    <p class="de-subtitle">Detrás de cada prenda</p>
+
+    <article class="de-item reveal">
+      <div class="de-col de-copy">
+        <p class="de-date">19 DE FEBRERO DE 2025</p>
+        <h3 class="de-item-title">El Arte de la Fibra de Vicuña</h3>
+        <p class="de-desc">
+          Exploramos la tradición y la artesanía detrás de cada prenda, destacando la rareza 
+          y el lujo de la fibra de vicuña.
+        </p>
+        <a href="#" class="de-link">DESCUBRIR</a>
+      </div>
+      <div class="de-col de-media">
+        <img src="img/elegancia-1.jpg" alt="Textura dorada de fibra de vicuña">
+      </div>
+    </article>
+
+    <hr class="de-divider">
+
+    <article class="de-item de-item--reverse reveal">
+      <div class="de-col de-media">
+        <img src="img/elegancia-2.jpg" alt="Editorial de moda con prenda de vicuña">
+      </div>
+      <div class="de-col de-copy">
+        <p class="de-date">10 DE MARZO DE 2025</p>
+        <h3 class="de-item-title">Nuestra Filosofía: Exclusividad y Sostenibilidad</h3>
+        <p class="de-desc">
+          La excelencia se une al respeto por el origen. Una mirada a los valores 
+          que inspiran cada creación y a las personas detrás de ellas.
+        </p>
+        <a href="#" class="de-link">DESCUBRIR</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ARTESANÍA EXQUISITA -->
+<section class="artesania-vicuna">
+  <div class="container">
+    <h2 class="section-title">La Artesanía Exquisita de la Fibra de Vicuña</h2>
+    <div class="fila alterna">
+      <div class="col imagen">
+        <img src="img/vicuna1.jpg" alt="Proceso artesanal con fibra de vicuña">
+      </div>
+      <div class="col texto">
+        <h3>El Origen de la Fibra</h3>
+        <p>
+          La fibra de vicuña es considerada una de las más finas y exclusivas del mundo. 
+          Cada hebra se selecciona cuidadosamente para dar vida a piezas de lujo 
+          que trascienden generaciones.
+        </p>
+      </div>
+    </div>
+    <div class="fila alterna">
+      <div class="col texto">
+        <h3>Un Arte que Trasciende</h3>
+        <p>
+          Cada prenda es el resultado de un legado artesanal que combina tradición ancestral 
+          con diseño contemporáneo, logrando un equilibrio perfecto entre elegancia y sofisticación.
+        </p>
+      </div>
+      <div class="col imagen">
+        <img src="img/vicuna2.jpg" alt="Prenda de lujo hecha con fibra de vicuña">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="pie-de-pagina">
+  <div class="container">
+    <h2 class="marca">Fibra de Vicuña</h2>
+    <p class="origen">Hecho con orgullo en Perú · Artesanía de Áncash</p>
+    <p class="descripcion">Fibra de vicuña artesanal · Exclusividad y sofisticación</p>
+    <div class="contacto">
+      <p>Teléfono: <a href="tel:+51963930498">+51 963 930 498</a></p>
+    </div>
+    <nav class="enlaces">
+      <a href="#">Colecciones</a>
+      <a href="#">Sobre nosotros</a>
+      <a href="#">Política de privacidad</a>
+      <a href="#">Términos y condiciones</a>
+    </nav>
+    <p class="copy">© 2025 Fibra de Vicuña · Todos los derechos reservados</p>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const langBtn = document.querySelector(".lang-btn");
+    const langMenu = document.querySelector(".lang-menu");
+
+    langBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      langMenu.classList.toggle("show");
+    });
+
+    document.addEventListener("click", () => {
+      langMenu.classList.remove("show");
+    });
+  });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
